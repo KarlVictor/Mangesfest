@@ -1,0 +1,172 @@
+/* CSS Style sheet*/
+
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+    background-color:ghostwhite;
+    font-family:Inconsolata;
+}
+
+p {
+    margin: 10px;
+}
+
+/* Navbar styling for content under */
+.nav body {	
+    padding-top: 70px;
+}
+
+/* ---------- Image styling collection ---------- */
+.profileImg {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px;
+    cursor: pointer;
+    max-height: 250px;
+    max-width: 250px;
+    right: 1px;
+}
+
+/* ---------- Glyphicon styling collection ---------- */
+.glyph-size {
+    font-size: 6.5vw;
+    padding: 20px 0 20px 0;  
+    text-align: center;
+}
+
+.glyph-center {
+    text-align: center;
+}
+
+    .iconimage {
+        max-width: 75%;
+}
+
+/* ---------- Container styling collection ---------- */
+.badge {
+    background: #222;
+    text-align: center;
+    position: relative;
+    padding: 4px 25px 0px 25px;
+    margin: 40px;
+    border-radius: 0px;
+    /*  width: 150px; */
+}
+
+.infoboxback {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 300px;
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.infobox {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin: 5px;
+    padding: 5px;
+}
+
+/* ---------- Carousel styling collection ---------- */
+
+/* Makes images fully responsive */
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    max-height: 600px; /* K�ndes som en full�sning kolla ev mer p� */
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 0 10px 25px;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    margin: 0;
+    padding: 0 25px 25px 0;
+    text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+/* ---------- Skills list styling collection ---------- */
+
+.skills-list {
+    width: 100%;
+    margin: 10px;
+}
+
+dt, dd{
+    margin-bottom: 5px;
+}
+
+.skills-list__skill, .skills-list__grade {
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.skills-list__skill{
+    width: 50%;
+    padding: 10px 0;
+}
+
+.skills-list__grade {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    font-weight: 700;
+    right: 10px;
+}
+
+/* ---------- Button styling collection ---------- */
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.footer {
+    min-height: 80px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+
+}
+
+/* ---------- Color styling collection ---------- */
+
+.white {
+    color: ghostwhite;
+}
+

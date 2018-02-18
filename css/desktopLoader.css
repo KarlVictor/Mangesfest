@@ -1,0 +1,86 @@
+@font-face {
+    font-family: hacker;
+    src: url(fonts/Hacker.otf);
+}
+
+* {
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    font-style: italic;
+}
+
+html, body {
+    background: black;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hacking {
+    position: relative;
+    bottom: 0px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.hackingtext {
+    margin-left: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 3.0vh;
+}
+
+.hackingdiv {
+    position: absolute;
+    bottom: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ffffff;
+    border-width: 1px;
+    width: 80%;
+    border-bottom-width: 0px;
+    max-height: 35%;
+    height: 35%;
+    animation: linear;
+    animation-name: hacksite;
+    animation-duration: 30s;
+    visibility: hidden;
+    text-align: left;
+
+}
+
+@keyframes hacksite {
+    0% {
+        visibility: visible;
+        bottom: -35%;
+    }
+
+    1% {
+        visibility: visible;
+        bottom: -30%;
+    }
+
+    5% {
+        visibility: visible;
+        bottom: -30%;
+    }
+
+    7% {
+        visibility: visible;
+        bottom: 0;
+    }
+
+    96% {
+        visibility: visible;
+        bottom: 0;
+    }
+
+    97% {
+        visibility: visible;
+        bottom: -15%;
+    }
+
+    100% {
+        bottom: -35%;
+    }
+}

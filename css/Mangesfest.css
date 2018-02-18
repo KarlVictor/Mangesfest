@@ -1,0 +1,1832 @@
+﻿/* GrundCSS från skolan */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,400');
+
+/* EGET SOM kan implementers senare */
+
+.regn {
+    font-size: 32px;
+    color: red;
+}
+
+#grilla {
+    float: right;
+    height: 200px;
+    width: auto;
+    animation: spin 10s linear infinite;
+}
+
+
+#mangemannen {
+    height: 50%;
+    width: 50%;
+}
+
+#brillorna {
+    position: relative;
+    height: 200px;
+    width: 600px;
+}
+
+#jolle {
+    visibility: hidden;
+    height: 600px;
+    width: auto;
+    bottom: 3910px;
+    left: 570px;
+    position: relative;
+    transform: rotate(290deg);
+    z-index: 5;
+}
+
+#jollen {
+    height: 400px;
+    width: auto;
+}
+
+#brillor {
+    visibility: visible;
+}
+
+#mange {
+    visibility: visible;
+}
+
+
+.dealwithmange {
+    animation-name: jollzz;
+    animation-duration: 120s;
+    position: relative;
+    visibility: hidden;
+}
+
+@keyframes jollzz {
+
+    1% {
+        bottom: 5500px;
+        left: 1800px;
+        position: relative;
+        z-index: 5;
+        visibility: visible;
+    }
+
+    9% {
+        visibility: visible;
+        bottom: 3910px;
+        left: 570px;
+        position: relative;
+        transform: rotate(290deg);
+        z-index: 5;
+    }
+}
+
+
+.dealwithmangesbrillor {
+    animation-name: brillz;
+    animation-duration: 120s;
+    position: relative;
+}
+
+@keyframes brillz {
+    1% {
+        bottom: 4935px;
+        left: -650px;
+        position: relative;
+        visibility: visible;
+    }
+
+    9% {
+        bottom: 4935px;
+        left: -650px;
+        visibility: visible;
+    }
+
+    10% {
+        bottom: 4935px;
+        left: 605px;
+        position: relative;
+        height: 200px;
+        width: 600px;
+        visibility: visible;
+    }
+
+    100% {
+    }
+}
+
+
+
+
+.dealwithmangehimself {
+    animation-name: mange;
+    position: relative;
+    animation-duration: 120s;
+}
+
+@keyframes mange {
+    1% {
+        visibility: visible;
+        text-align: center;
+        bottom: 3000px;
+    }
+
+    10% {
+        visibility: visible;
+        text-align: center;
+        bottom: 3900px;
+    }
+
+    100% {
+        visibility: visible;
+        text-align: center;
+        bottom: 3900px;
+    }
+}
+
+
+.poke {
+    animation-name: pokes;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    position: relative;
+    z-index: 99;
+    animation-iteration-count: 3000;
+    height: 300px;
+    width: 300px;
+    float: left;
+    left: -100px;
+    top: 200px;
+    visibility: hidden;
+}
+
+@keyframes pokes {
+    0% {
+        left: -150px;
+        top: 200px;
+        transform: rotate(20deg);
+        visibility: visible;
+    }
+
+    50% {
+        left: -20px;
+        top: 200px;
+        transform: rotate(40deg);
+        visibility: visible;
+    }
+
+
+    100% {
+        left: -150px;
+        top: 200px;
+        visibility: visible;
+        transform: rotateX('50deg')
+    }
+}
+
+
+/*
+.poke {
+    float: left;
+    position: relative;
+    right: 90px;
+    animation-name: pokes;
+    animation-duration: 20s;
+    animation: linear infinite;
+}
+
+@keyframes pokes {
+    25%{
+        right: 400px;
+    }
+
+    50% {
+        right: 300px;
+    }
+
+    75% {
+        right: 200px;
+    }
+
+    100% {
+        right: 100px;
+    }
+}
+
+    */
+.bira {
+    width: 300px;
+    height: 300px;
+    animation-name: norrlands;
+    animation-duration: 10s;
+    animation: spin 10s linear infinite;
+    position: relative;
+}
+
+@keyframes norrlands {
+    25% {
+        left: -200px;
+        bottom: 1000px;
+    }
+
+    50% {
+        left: 100px;
+        bottom: 700px;
+    }
+
+    75% {
+        left: 500px;
+        bottom: 600px;
+    }
+
+    100% {
+        left: 1000px;
+        bottom: 350px;
+    }
+}
+
+.wrap {
+    width: 200px;
+    margin: auto;
+    z-index: 1000;
+    position: relative;
+    right: 700px;
+}
+
+.msg {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Bree Serif', Courier, monospaced;
+    font-size: 3.5em;
+    width: 200px;
+    position: absolute;
+    margin: 55px 0 0 2px;
+    pointer-events: none;
+}
+
+.sticker {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/13034/sticker.png) top center no-repeat;
+    animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused;
+}
+
+    .sticker:hover {
+        /* Toggle our animation play state to running when we are hovering over our sticker */
+        animation-play-state: running;
+    }
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+.awesome {
+    font-family: futura;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    right: 1px;
+    top: 20px;
+    color: #313131;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation: colorchange 7s infinite alternate;
+}
+
+.font1 {
+    font-family: futura;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-animation: colorchange 5s infinite alternate;
+    animation-name: colorchange1
+}
+
+.font2 {
+    font-family: futura;
+    font-style: italic;
+    font-size: 45px;
+    -webkit-animation: colorchange 3s infinite alternate;
+    animation-name: colorchange2
+}
+
+.font3 {
+    font-family: futura;
+    font-style: italic;
+    font-size: 45px;
+    font-style: italic;
+    -webkit-animation: colorchange 6s infinite alternate;
+    animation-name: colorchange3
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: #8e44ad;
+    }
+
+    20% {
+        color: #1abc9c;
+    }
+
+    30% {
+        color: #d35400;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: #34495e;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: #2980b9;
+    }
+
+    80% {
+        color: #f1c40f;
+    }
+
+    90% {
+        color: #2980b9;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+
+.ultraparty {
+    font-size: 48px;
+    animation-name: ultraparty;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    color: #000000;
+    bottom: 200px;
+    z-index: 20;
+    position: relative;
+}
+
+
+.rain1 {
+    animation-name: rain1;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain1 {
+    0% {
+        bottom: 2000px;
+        left: 20px;
+        transform: rotate(1turn);
+    }
+
+    50% {
+        bottom: 500px;
+        left: 20px;
+        transform: rotate(1turn);
+    }
+
+    75% {
+        bottom: 50px;
+        left: 20px;
+        transform: rotate(1turn);
+    }
+
+    100% {
+        bottom: -200px;
+        left: 10px;
+        transform: rotate(1turn);
+    }
+}
+
+
+.rain2 {
+    animation-name: rain2;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 250px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain2 {
+    0% {
+        bottom: 2000px;
+        left: 250px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 250px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 250px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 250px;
+    }
+}
+
+
+
+.rain3 {
+    animation-name: rain3;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 500px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain3 {
+    0% {
+        bottom: 2000px;
+        left: 500px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 500px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 500px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 500px;
+    }
+}
+
+
+.rain4 {
+    animation-name: rain4;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 500px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain4 {
+    0% {
+        bottom: 2000px;
+        left: 750px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 750px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 750px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 750px;
+    }
+}
+
+
+.rain5 {
+    animation-name: rain5;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 675px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain5 {
+    0% {
+        bottom: 2000px;
+        left: 630px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 630px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 630px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 630px;
+    }
+}
+
+.rain6 {
+    animation-name: rain6;
+    animation-duration: 12s;
+    animation-delay: 4s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 333px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain6 {
+    0% {
+        bottom: 2000px;
+        left: 333px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 333px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 333px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 333px;
+    }
+}
+
+
+
+
+@keyframes ultraparty {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.flinta {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 120s;
+    animation-delay: 2s;
+    z-index: 10;
+    animation: spin 10s linear infinite;
+}
+
+.beasus {
+    position: relative;
+    float: right;
+    bottom: 600px;
+    width: 600px;
+    height: 400px;
+}
+
+.pompom {
+    text-align: center;
+    animation-name: pompom;
+    animation-duration: 80s;
+    animation-delay: 2s;
+    bottom: 600px;
+    position: relative;
+    animation: infinite;
+    visibility: hidden;
+}
+
+.pompomfrittes {
+    bottom: 600px;
+    left: 100px;
+    position: relative;
+}
+/* Standard syntax */
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+@keyframes pompom {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        bottom: 300px;
+    }
+
+    50% {
+        left: 200px;
+        bottom: 400px;
+    }
+
+    75% {
+        left: 0px;
+        bottom: 600px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+@-webkit-keyframes colorchange1 {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: #8e44ad;
+    }
+
+    20% {
+        color: forestgreen;
+    }
+
+    30% {
+        color: #d35400;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: darkorange;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: lightpink;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    90% {
+        color: #2980b9;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+@-webkit-keyframes colorchange2 {
+    0% {
+        color: rebeccapurple;
+    }
+
+    10% {
+        color: dodgerblue;
+    }
+
+    20% {
+        color: ghostwhite;
+    }
+
+    30% {
+        color: powderblue;
+    }
+
+    40% {
+        color: gold;
+    }
+
+    50% {
+        color: darkorange;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: lightcoral;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    90% {
+        color: khaki;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+
+@-webkit-keyframes colorchange3 {
+    0% {
+        color: goldenrod;
+    }
+
+    10% {
+        color: bisque;
+    }
+
+    20% {
+        color: aquamarine;
+    }
+
+    30% {
+        color: powderblue;
+    }
+
+    40% {
+        color: rosybrown;
+    }
+
+    50% {
+        color: lime;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: salmon;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    90% {
+        color: silver;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+.profileImg {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px;
+    cursor: pointer;
+    max-height: 250px;
+    max-width: 250px;
+    right: 1px;
+    z-index: 10000;
+}
+
+
+
+
+
+/* Removes for mobile design */
+
+@media screen and (max-width: 720px) {
+    .desktop {
+        display: none;
+    }
+
+
+
+    .regn {
+        font-size: 32px;
+        color: red;
+    }
+
+    #grilla {
+        float: right;
+        height: 200px;
+        width: auto;
+        animation: spin 10s linear infinite;
+        display: none;
+    }
+
+
+    #mangemannen {
+        height: 50%;
+        width: 50%;
+        display: none;
+    }
+
+    #brillorna {
+        position: relative;
+        height: 200px;
+        width: 600px;
+        display: none;
+    }
+
+    #jolle {
+        visibility: hidden;
+        height: 600px;
+        width: auto;
+        bottom: 3910px;
+        left: 570px;
+        position: relative;
+        transform: rotate(290deg);
+        z-index: 5;
+        display: none;
+    }
+
+    #jollen {
+        height: 400px;
+        width: auto;
+        display: none;
+    }
+
+    #brillor {
+        visibility: visible;
+        display: none;
+    }
+
+    #mange {
+        visibility: visible;
+        display: none;
+    }
+
+
+    .dealwithmange {
+        animation-name: jollzz;
+        animation-duration: 120s;
+        position: relative;
+        visibility: hidden;
+        display: none;
+    }
+
+    @keyframes jollzz {
+
+        1% {
+            bottom: 5500px;
+            left: 1800px;
+            position: relative;
+            z-index: 5;
+            visibility: visible;
+            display: none;
+        }
+
+        9% {
+            visibility: visible;
+            bottom: 3910px;
+            left: 570px;
+            position: relative;
+            transform: rotate(290deg);
+            z-index: 5;
+            display: none;
+        }
+    }
+
+
+    .dealwithmangesbrillor {
+        animation-name: brillz;
+        animation-duration: 120s;
+        position: relative;
+        display: none;
+    }
+
+    @keyframes brillz {
+        1% {
+            bottom: 4935px;
+            left: -650px;
+            position: relative;
+            visibility: visible;
+            display: none;
+        }
+
+        9% {
+            bottom: 4935px;
+            left: -650px;
+            visibility: visible;
+            display: none;
+        }
+
+        10% {
+            bottom: 4935px;
+            left: 605px;
+            position: relative;
+            height: 200px;
+            width: 600px;
+            visibility: visible;
+            display: none;
+        }
+
+        100% {
+            display: none;
+        }
+    }
+
+
+
+
+    .dealwithmangehimself {
+        animation-name: mange;
+        position: relative;
+        animation-duration: 120s;
+        display: none;
+    }
+
+    @keyframes mange {
+        1% {
+            visibility: visible;
+            text-align: center;
+            bottom: 3000px;
+            display: none;
+        }
+
+        10% {
+            visibility: visible;
+            text-align: center;
+            bottom: 3900px;
+            display: none;
+        }
+
+        100% {
+            visibility: visible;
+            text-align: center;
+            bottom: 3900px;
+            display: none;
+        }
+    }
+
+
+    .poke {
+        animation-name: pokes;
+        animation-duration: 10s;
+        animation-delay: 5s;
+        position: relative;
+        z-index: 99;
+        animation-iteration-count: 3000;
+        height: 300px;
+        width: 300px;
+        float: left;
+        left: -100px;
+        top: 200px;
+        visibility: hidden;
+        display: none;
+    }
+
+    @keyframes pokes {
+        0% {
+            left: -150px;
+            top: 200px;
+            transform: rotate(20deg);
+            visibility: visible;
+            display: none;
+        }
+
+        50% {
+            left: -20px;
+            top: 200px;
+            transform: rotate(40deg);
+            visibility: visible;
+            display: none;
+        }
+
+
+        100% {
+            left: -150px;
+            top: 200px;
+            visibility: visible;
+            transform: rotateX('50deg');
+            display: none;
+        }
+    }
+
+
+    /*
+.poke {
+    float: left;
+    position: relative;
+    right: 90px;
+    animation-name: pokes;
+    animation-duration: 20s;
+    animation: linear infinite;
+}
+
+@keyframes pokes {
+    25%{
+        right: 400px;
+    }
+
+    50% {
+        right: 300px;
+    }
+
+    75% {
+        right: 200px;
+    }
+
+    100% {
+        right: 100px;
+    }
+}
+
+    */
+    .bira {
+        width: 300px;
+        height: 300px;
+        animation-name: norrlands;
+        animation-duration: 10s;
+        animation: spin 10s linear infinite;
+        position: relative;
+        display: none;
+    }
+
+    @keyframes norrlands {
+        25% {
+            left: -200px;
+            bottom: 1000px;
+            display: none;
+        }
+
+        50% {
+            left: 100px;
+            bottom: 700px;
+            display: none;
+        }
+
+        75% {
+            left: 500px;
+            bottom: 600px;
+            display: none;
+        }
+
+        100% {
+            left: 1000px;
+            bottom: 350px;
+            display: none;
+        }
+    }
+
+    .wrap {
+        width: 200px;
+        margin: auto;
+        z-index: 1000;
+        position: relative;
+        right: 700px;
+        display: none;
+    }
+
+    .msg {
+        color: whitesmoke;
+        text-align: center;
+        font-family: 'Bree Serif', Courier, monospaced;
+        font-size: 3.5em;
+        width: 200px;
+        position: absolute;
+        margin: 55px 0 0 2px;
+        pointer-events: none;
+        display: none;
+    }
+
+    .sticker {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/13034/sticker.png) top center no-repeat;
+        animation: spin 10s linear infinite;
+        /*Set our animation play state to paused initially */
+        animation-play-state: paused;
+        display: none;
+    }
+
+        .sticker:hover {
+            /* Toggle our animation play state to running when we are hovering over our sticker */
+            animation-play-state: running;
+            display: none;
+        }
+
+
+    @keyframes spin {
+        100% {
+            transform: rotate(1turn);
+            display: none;
+        }
+    }
+
+
+
+    .awesome {
+        font-family: futura;
+        font-style: italic;
+        width: 100%;
+        margin: 0 auto;
+        right: 1px;
+        top: 20px;
+        color: #313131;
+        font-size: 45px;
+        font-weight: bold;
+        position: absolute;
+        -webkit-animation: colorchange 7s infinite alternate;
+        display: none;
+    }
+
+    .font1 {
+        font-family: futura;
+        font-style: italic;
+        font-size: 45px;
+        font-weight: bold;
+        font-style: italic;
+        -webkit-animation: colorchange 5s infinite alternate;
+        animation-name: colorchange1;
+        display: none;
+    }
+
+    .font2 {
+        font-family: futura;
+        font-style: italic;
+        font-size: 45px;
+        -webkit-animation: colorchange 3s infinite alternate;
+        animation-name: colorchange2;
+        display: none;
+    }
+
+    .font3 {
+        font-family: futura;
+        font-style: italic;
+        font-size: 45px;
+        font-style: italic;
+        -webkit-animation: colorchange 6s infinite alternate;
+        animation-name: colorchange3;
+        display: none;
+    }
+
+    @-webkit-keyframes colorchange {
+        0% {
+            color: blue;
+            display: none;
+        }
+
+        10% {
+            color: #8e44ad;
+            display: none;
+        }
+
+        20% {
+            color: #1abc9c;
+            display: none;
+        }
+
+        30% {
+            color: #d35400;
+            display: none;
+        }
+
+        40% {
+            color: blue;
+            display: none;
+        }
+
+        50% {
+            color: #34495e;
+            display: none;
+        }
+
+        60% {
+            color: blue;
+            display: none;
+        }
+
+        70% {
+            color: #2980b9;
+            display: none;
+        }
+
+        80% {
+            color: #f1c40f;
+            display: none;
+        }
+
+        90% {
+            color: #2980b9;
+            display: none;
+        }
+
+        100% {
+            color: pink;
+            display: none;
+        }
+    }
+
+
+    .ultraparty {
+        font-size: 48px;
+        animation-name: ultraparty;
+        animation-duration: 20s;
+        animation-delay: 0s;
+        color: #000000;
+        bottom: 200px;
+        z-index: 20;
+        position: relative;
+        display: none;
+    }
+
+
+    .rain1 {
+        animation-name: rain1;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        position: relative;
+        bottom: 2000px;
+        height: 200px;
+        z-index: 99;
+        animation-iteration-count: 3000;
+        display: none;
+    }
+
+    @keyframes rain1 {
+        0% {
+            bottom: 2000px;
+            left: 20px;
+            transform: rotate(1turn);
+            display: none;
+        }
+
+        50% {
+            bottom: 500px;
+            left: 20px;
+            transform: rotate(1turn);
+            display: none;
+        }
+
+        75% {
+            bottom: 50px;
+            left: 20px;
+            transform: rotate(1turn);
+            display: none;
+        }
+
+        100% {
+            bottom: -200px;
+            left: 10px;
+            transform: rotate(1turn);
+            display: none;
+        }
+    }
+
+
+    .rain2 {
+        animation-name: rain2;
+        animation-duration: 15s;
+        animation-delay: 2s;
+        position: relative;
+        bottom: 2000px;
+        height: 200px;
+        z-index: 99;
+        left: 250px;
+        animation-iteration-count: 3000;
+        display: none;
+    }
+
+    @keyframes rain2 {
+        0% {
+            bottom: 2000px;
+            left: 250px;
+            display: none;
+        }
+
+        50% {
+            bottom: 500px;
+            left: 250px;
+            display: none;
+        }
+
+        75% {
+            bottom: 20px;
+            left: 250px;
+            display: none;
+        }
+
+        100% {
+            bottom: -200px;
+            left: 250px;
+            display: none;
+        }
+    }
+
+
+
+    .rain3 {
+        animation-name: rain3;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        position: relative;
+        bottom: 2000px;
+        height: 200px;
+        z-index: 99;
+        left: 500px;
+        animation-iteration-count: 3000;
+        display: none;
+    }
+
+    @keyframes rain3 {
+        0% {
+            bottom: 2000px;
+            left: 500px;
+            display: none;
+        }
+
+        50% {
+            bottom: 500px;
+            left: 500px;
+            display: none;
+        }
+
+        75% {
+            bottom: 20px;
+            left: 500px;
+            display: none;
+        }
+
+        100% {
+            bottom: -200px;
+            left: 500px;
+            display: none;
+        }
+    }
+
+
+    .rain4 {
+        animation-name: rain4;
+        animation-duration: 15s;
+        animation-delay: 0s;
+        position: relative;
+        bottom: 2000px;
+        height: 200px;
+        z-index: 99;
+        left: 500px;
+        animation-iteration-count: 3000;
+        display: none;
+    }
+
+    @keyframes rain4 {
+        0% {
+            bottom: 2000px;
+            left: 750px;
+            display: none;
+        }
+
+        50% {
+            bottom: 500px;
+            left: 750px;
+            display: none;
+        }
+
+        75% {
+            bottom: 20px;
+            left: 750px;
+            display: none;
+        }
+
+        100% {
+            bottom: -200px;
+            left: 750px;
+            display: none;
+        }
+    }
+
+
+    .rain5 {
+        animation-name: rain5;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        position: relative;
+        bottom: 2000px;
+        height: 200px;
+        z-index: 99;
+        left: 675px;
+        animation-iteration-count: 3000;
+        display: none;
+    }
+
+    @keyframes rain5 {
+        0% {
+            bottom: 2000px;
+            left: 630px;
+            display: none;
+        }
+
+        50% {
+            bottom: 500px;
+            left: 630px;
+            display: none;
+        }
+
+        75% {
+            bottom: 20px;
+            left: 630px;
+            display: none;
+        }
+
+        100% {
+            bottom: -200px;
+            left: 630px;
+            display: none;
+        }
+    }
+
+    .rain6 {
+        animation-name: rain6;
+        animation-duration: 12s;
+        animation-delay: 4s;
+        position: relative;
+        bottom: 2000px;
+        height: 200px;
+        z-index: 99;
+        left: 333px;
+        animation-iteration-count: 3000;
+        display: none;
+    }
+
+    @keyframes rain6 {
+        0% {
+            bottom: 2000px;
+            left: 333px;
+            display: none;
+        }
+
+        50% {
+            bottom: 500px;
+            left: 333px;
+            display: none;
+        }
+
+        75% {
+            bottom: 20px;
+            left: 333px;
+            display: none;
+        }
+
+        100% {
+            bottom: -200px;
+            left: 333px;
+            display: none;
+        }
+    }
+
+
+
+
+    @keyframes ultraparty {
+        0% {
+            visibility: hidden;
+            display: none;
+        }
+
+        50% {
+            visibility: visible;
+            display: none;
+        }
+
+        100% {
+            visibility: hidden;
+            display: none;
+        }
+    }
+
+    .flinta {
+        width: 800px;
+        height: 600px;
+        position: relative;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 120s;
+        animation-delay: 2s;
+        z-index: 10;
+        animation: spin 10s linear infinite;
+        display: none;
+    }
+
+    .beasus {
+        position: relative;
+        float: right;
+        bottom: 600px;
+        width: 600px;
+        height: 400px;
+        display: none;
+    }
+
+    .pompom {
+        text-align: center;
+        animation-name: pompom;
+        animation-duration: 80s;
+        animation-delay: 2s;
+        bottom: 600px;
+        position: relative;
+        animation: infinite;
+        visibility: hidden;
+        display: none;
+    }
+
+    .pompomfrittes {
+        bottom: 600px;
+        left: 100px;
+        position: relative;
+        display: none;
+    }
+    /* Standard syntax */
+    @keyframes example {
+        0% {
+            left: 0px;
+            top: 0px;
+            display: none;
+        }
+
+        25% {
+            left: 200px;
+            top: 0px;
+            display: none;
+        }
+
+        50% {
+            left: 200px;
+            top: 200px;
+            display: none;
+        }
+
+        75% {
+            left: 0px;
+            top: 200px;
+            display: none;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+            display: none;
+        }
+    }
+
+
+    @keyframes pompom {
+        0% {
+            left: 0px;
+            top: 0px;
+            display: none;
+        }
+
+        25% {
+            left: 200px;
+            bottom: 300px;
+        }
+
+        50% {
+            left: 200px;
+            bottom: 400px;
+        }
+
+        75% {
+            left: 0px;
+            bottom: 600px;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+
+    @-webkit-keyframes colorchange1 {
+        0% {
+            color: blue;
+        }
+
+        10% {
+            color: #8e44ad;
+        }
+
+        20% {
+            color: forestgreen;
+        }
+
+        30% {
+            color: #d35400;
+        }
+
+        40% {
+            color: blue;
+        }
+
+        50% {
+            color: darkorange;
+        }
+
+        60% {
+            color: blue;
+        }
+
+        70% {
+            color: lightpink;
+        }
+
+        80% {
+            color: lime;
+        }
+
+        90% {
+            color: #2980b9;
+        }
+
+        100% {
+            color: pink;
+        }
+    }
+
+    @-webkit-keyframes colorchange2 {
+        0% {
+            color: rebeccapurple;
+        }
+
+        10% {
+            color: dodgerblue;
+        }
+
+        20% {
+            color: ghostwhite;
+        }
+
+        30% {
+            color: powderblue;
+        }
+
+        40% {
+            color: gold;
+        }
+
+        50% {
+            color: darkorange;
+        }
+
+        60% {
+            color: blue;
+        }
+
+        70% {
+            color: lightcoral;
+        }
+
+        80% {
+            color: lime;
+        }
+
+        90% {
+            color: khaki;
+        }
+
+        100% {
+            color: pink;
+        }
+    }
+
+
+    @-webkit-keyframes colorchange3 {
+        0% {
+            color: goldenrod;
+        }
+
+        10% {
+            color: bisque;
+        }
+
+        20% {
+            color: aquamarine;
+        }
+
+        30% {
+            color: powderblue;
+        }
+
+        40% {
+            color: rosybrown;
+        }
+
+        50% {
+            color: lime;
+        }
+
+        60% {
+            color: blue;
+        }
+
+        70% {
+            color: salmon;
+        }
+
+        80% {
+            color: lime;
+        }
+
+        90% {
+            color: silver;
+        }
+
+        100% {
+            color: pink;
+        }
+    }
+
+    .profileImg {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 3px 4px;
+        cursor: pointer;
+        max-height: 250px;
+        max-width: 250px;
+        right: 1px;
+        z-index: 10000;
+    }
+
+
+
+
+
+}

@@ -1,0 +1,1236 @@
+/* GrundCSS från skolan */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,400');
+
+/* EGET SOM kan implementers senare */
+
+.regn {
+    font-size: 32px;
+    color: red;
+
+}
+
+#grilla {
+    float: right;
+    height: 200px;
+    width: auto;
+    animation: spin 10s linear infinite;
+}
+
+
+#mangemannen {
+    height: 50%;
+    width: 50%;
+}
+
+#brillorna {
+    position: relative;
+    height: 200px;
+    width: 600px;
+}
+    
+#jolle {
+    visibility: hidden;
+    height: 600px;
+        width: auto;
+        bottom: 3910px;
+        left: 570px;
+        position: relative;
+        transform: rotate(290deg);
+        z-index: 5;
+
+
+}
+
+#jollen {
+    height: 400px;
+    width: auto;
+}
+
+#brillor {
+    visibility: visible;
+}
+
+#mange {
+    visibility: visible;
+}
+
+
+.dealwithmange {
+    animation-name: jollzz;
+    animation-duration: 120s;
+    position: relative;
+    visibility: hidden;
+}
+
+@keyframes jollzz {
+    
+    1% {
+        bottom: 5500px;
+        left: 1800px;
+        position: relative;
+        z-index: 5;
+        visibility: visible;
+    }
+    
+    9% {
+        visibility: visible;
+        bottom: 3910px;
+        left: 570px;
+        position: relative;
+        transform: rotate(290deg);
+        z-index: 5;
+    }
+}
+
+
+.dealwithmangesbrillor {
+    animation-name: brillz;
+    animation-duration: 120s;
+    position: relative;
+}
+
+@keyframes brillz {
+    1%{
+        bottom:4935px;
+        left: -650px;
+        position: relative;
+        visibility: visible;
+    }
+
+    9% {
+        bottom: 4935px;
+        left:-650px;
+        visibility: visible;
+       
+    }
+
+    10% {
+        bottom: 4935px;
+        left: 605px;
+        position: relative;
+        height: 200px;
+        width: 600px;
+        visibility: visible;        
+    }
+    100%{
+
+    }
+}
+
+
+
+
+.dealwithmangehimself {
+    animation-name: mange;
+    position: relative;
+    animation-duration: 120s;
+    
+}
+
+@keyframes mange {
+    1%{
+        visibility:visible;
+        text-align: center;
+        bottom: 3000px;
+    }
+
+    10%{
+        visibility: visible;
+        text-align: center;
+        bottom: 3900px;
+    }
+
+    100%{
+        visibility: visible;
+        text-align: center;
+        bottom: 3900px;
+    }
+}
+
+
+.poke {
+    animation-name: pokes;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    position: relative;
+    z-index: 99;
+    animation-iteration-count: 3000;
+    height: 300px;
+    width: 300px;
+    float: left;
+    left: -100px;
+    top: 200px;
+    visibility: hidden;
+}
+
+@keyframes pokes {
+    0% {       
+        left: -150px;
+        top: 200px;
+        transform: rotate(20deg);
+        visibility: visible;
+    }
+
+    50% {
+        left: -20px;
+        top: 200px;
+        transform: rotate(40deg);
+        visibility: visible;
+    }
+
+
+    100% {
+        left: -150px;
+        top: 200px;
+        visibility: visible;
+        transform: rotateX('50deg')
+    }
+}
+
+
+/*
+.poke {
+    float: left;
+    position: relative;
+    right: 90px;
+    animation-name: pokes;
+    animation-duration: 20s;
+    animation: linear infinite;
+}
+
+@keyframes pokes {
+    25%{
+        right: 400px;
+    }
+
+    50% {
+        right: 300px;
+    }
+
+    75% {
+        right: 200px;
+    }
+
+    100% {
+        right: 100px;
+    }
+}
+
+    */
+.bira {
+    width: 300px;
+    height: 300px;
+    animation-name: norrlands;
+    animation-duration: 10s;
+    animation: spin 10s linear infinite;
+    position: relative;
+}
+
+@keyframes norrlands{
+    25%{
+        left: -200px;
+        bottom: 1000px;
+    }
+
+    50%{
+        left: 100px;
+        bottom: 700px;
+    }
+    75%{
+        left: 500px;
+        bottom: 600px;
+    }
+    100%{
+        left:1000px;
+        bottom: 350px;
+    }
+
+}
+
+.wrap {
+    width: 200px;
+    margin: auto;
+    z-index: 1000;
+    position: relative;
+    right: 700px;
+}
+
+.msg {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Bree Serif', Courier, monospaced;
+    font-size: 3.5em;
+    width: 200px;
+    position: absolute;
+    margin: 55px 0 0 2px;
+    pointer-events: none;
+}
+
+.sticker {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/13034/sticker.png) top center no-repeat;
+    animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused;
+}
+
+    .sticker:hover {
+        /* Toggle our animation play state to running when we are hovering over our sticker */
+        animation-play-state: running;
+    }
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+.awesome {
+    font-family: futura;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    right: 1px;
+    top: 20px;
+    color: #313131;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation: colorchange 7s infinite alternate;
+}
+
+.font1 {
+    font-family: futura;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-animation: colorchange 5s infinite alternate;
+    animation-name: colorchange1
+}
+
+.font2 {
+    font-family: futura;
+    font-style: italic;
+    font-size: 45px;
+    -webkit-animation: colorchange 3s infinite alternate;
+    animation-name: colorchange2
+}
+
+.font3 {
+    font-family: futura;
+    font-style: italic;
+    font-size: 45px;
+    font-style: italic;
+    -webkit-animation: colorchange 6s infinite alternate;
+    animation-name: colorchange3
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: #8e44ad;
+    }
+
+    20% {
+        color: #1abc9c;
+    }
+
+    30% {
+        color: #d35400;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: #34495e;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: #2980b9;
+    }
+
+    80% {
+        color: #f1c40f;
+    }
+
+    90% {
+        color: #2980b9;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+
+.ultraparty {
+    font-size: 48px;
+    animation-name: ultraparty;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    color: #000000;
+    bottom: 200px;
+    z-index: 20;
+    position: relative;
+    
+}
+
+
+.rain1 {
+    animation-name: rain1;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain1{
+    0% {
+        bottom: 2000px;
+        left: 20px;
+        transform: rotate(1turn);
+    }
+    50% {
+        bottom: 500px;
+        left: 20px;
+        transform: rotate(1turn);
+    }
+
+    75% {
+        bottom: 50px;
+        left: 20px;
+        transform: rotate(1turn);
+    }
+    100% {
+        bottom: -200px;
+        left: 10px;
+        transform: rotate(1turn);
+    }
+}
+
+
+.rain2 {
+    animation-name: rain2;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 250px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain2 {
+    0% {
+        bottom: 2000px;
+        left: 250px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 250px;
+    }
+
+    75% {
+        bottom: 20px;
+        
+        left: 250px;
+    }
+
+    100% {
+        bottom: -200px;
+        
+        left: 250px;
+    }
+}
+
+
+
+.rain3 {
+    animation-name: rain3;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 500px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain3 {
+    0% {
+        bottom: 2000px;
+        left: 500px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 500px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 500px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 500px;
+    }
+}
+
+
+.rain4 {
+    animation-name: rain4;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 500px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain4 {
+    0% {
+        bottom: 2000px;
+        left: 750px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 750px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 750px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 750px;
+    }
+}
+
+
+.rain5 {
+    animation-name: rain5;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 675px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain5 {
+    0% {
+        bottom: 2000px;
+        left: 630px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 630px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 630px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 630px;
+    }
+}
+
+.rain6 {
+    animation-name: rain6;
+    animation-duration: 12s;
+    animation-delay: 4s;
+    position: relative;
+    bottom: 2000px;
+    height: 200px;
+    z-index: 99;
+    left: 333px;
+    animation-iteration-count: 3000;
+}
+
+@keyframes rain6 {
+    0% {
+        bottom: 2000px;
+        left: 333px;
+    }
+
+    50% {
+        bottom: 500px;
+        left: 333px;
+    }
+
+    75% {
+        bottom: 20px;
+        left: 333px;
+    }
+
+    100% {
+        bottom: -200px;
+        left: 333px;
+    }
+}
+
+
+
+
+@keyframes ultraparty {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.flinta {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 120s;
+    animation-delay: 2s;
+    z-index: 10;
+    animation: spin 10s linear infinite;
+}
+
+    .beasus {
+        position: relative;
+        float: right;
+        bottom: 600px;
+        width: 600px;
+        height: 400px;
+    }
+
+.pompom {
+    text-align: center;
+    animation-name: pompom;
+    animation-duration: 80s;
+    animation-delay: 2s;
+    bottom: 600px;
+    position: relative;
+    animation: infinite;
+    visibility:hidden;
+}
+
+    .pompomfrittes {
+        bottom: 600px;
+        left: 100px;
+        position: relative;
+    }
+    /* Standard syntax */
+    @keyframes example {
+        0% {
+        
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+@keyframes pompom {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        bottom: 300px;
+    }
+
+    50% {
+        left: 200px;
+        bottom: 400px;
+    }
+
+    75% {
+        left: 0px;
+        bottom: 600px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+@-webkit-keyframes colorchange1 {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: #8e44ad;
+    }
+
+    20% {
+        color: forestgreen;
+    }
+
+    30% {
+        color: #d35400;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: darkorange;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        
+        color: lightpink;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    90% {
+        color: #2980b9;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+@-webkit-keyframes colorchange2 {
+    0% {
+        color: rebeccapurple;
+    }
+
+    10% {
+        color: dodgerblue;
+    }
+
+    20% {
+        color: ghostwhite;
+    }
+
+    30% {
+        color: powderblue;
+    }
+
+    40% {
+        color: gold;
+    }
+
+    50% {
+        color: darkorange;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: lightcoral;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    90% {
+        color: khaki;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+
+@-webkit-keyframes colorchange3 {
+    0% {
+        color: goldenrod;
+    }
+
+    10% {
+        color: bisque;
+    }
+
+    20% {
+        color: aquamarine;
+    }
+
+    30% {
+        color: powderblue;
+    }
+
+    40% {
+        color: rosybrown;
+    }
+
+    50% {
+        color: lime;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: salmon;
+    }
+
+    80% {
+        color: lime;
+    }
+
+    90% {
+        color: silver;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General */
+body {
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+a,
+a:link {
+    outline: none;
+}
+h1 {
+    font-weight: 100;
+    font-size: 72px;
+    margin: 20px 0;
+    color: ghostwhite;
+}
+
+/* Form elements */
+input[type="text"] {
+    height: 56px;
+    width: 75%;
+    padding: 12px 8px 12px 40px;
+    margin-right: 10px;
+    font-size: 24px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+}
+:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+button {
+    position: relative;
+    height: 56px;
+    padding: 10px;
+    border: 0;
+    background-color: tomato;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+    border-radius: 8px;
+}
+button:hover {
+    background: #FB3D1B;
+}
+button:active {
+    top: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+/* List styles */
+
+/* Sänkt margin och padding för att få bort kanter från listan */
+ul {
+    margin:  0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    border-bottom: 1px #eeeeee solid;
+    margin-bottom: 0;
+    padding: 12px 8px 12px 40px;
+    text-align: left;
+    background: #eee;
+    cursor: hand;
+}
+
+
+
+
+
+ul li a {
+    cursor: pointer;
+    margin-top: -3px;
+    float: right;
+    opacity: 0;
+    text-decoration: none;
+    color: tomato;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-transition: opacity 0.3s, border-color 0.2s;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+}
+ul li:hover a{
+    opacity: 1.0;
+}
+ul li a:hover {
+    border: 4px solid tomato;
+}
+
+/* User interface */
+div#todo-app {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+input[type="text"]#todo{
+    width: 67%;
+    margin-right: 0;
+}
+button#submit{
+    width: 30%;
+    display: block;
+    float: right;
+}
+
+
+
+/* CSS från internet */
+
+
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* Remove margins and padding from the list*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+/* Style the list items*/
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+}
+
+
+
+
+
+
+ul li:hover {
+    background: #ddd;
+}
+
+
+
+/* Style the close button*/
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+
+
+
+/* Style the header */
+.header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 200px;
+    border-color: lime;
+    border-width: 20px;
+    border-style:dotted;
+}
+
+.bottom {
+    background-color: #f44336;
+    padding: 60px 40px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/* Clear floats after the header
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*/
+
+
+/* Style the input
+input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+*/
+
+
+
+/* Style the "Add" button
+.addBtn {
+    padding: 10px;
+    width: 90px;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+*/
+
+
+
+
+/* egen css */
+/*
+h1 {
+    font-size: 75px;
+}
+
+
+
+
+
+
+
+/* When clicked on, add a background color and strike out text
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+*/
+/* Add a "checked" mark when clicked on */
+/*ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+} */
+
+
+/* Set all odd list items to a different color (zebra-stripes)
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+*/
+/* Darker background-color on hover */
